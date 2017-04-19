@@ -1,0 +1,106 @@
+Hola: 
+En cuanto al acelerómetro, es mejor el de comunicación digital sin duda.
+En cuanto al Wifi, por un lado ya hay un poncho Wifi para la pico-Ciaa. Por otro lado estoy pensando en una aplicación wearable, por lo que me interesa BlueTooth. Si el RN42 es muy grande se puede buscar otro que sea popular pero un poco más chico. 
+El pulsador es para entrar en modo apareo para el bluetooth, pero se trata de un pulsador por un puerto genérico.
+
+2017-04-18 18:14 GMT-03:00 Marcelo Franz Moreno Marin <mmarcelofrm@hotmail.com>:
+
+    Diego.
+
+     
+
+    Debido al reducido espacio en la pico ciaa, creo que ese modulo bluetooth RN-42 ocuparía mucho espacio, pienso talvez que en vez de ese podría implementar un módulo esp8266-12 que es este:
+
+     
+
+    que cuenta con WiFi, conectando solo las patas de rx y tx para que se pueda configurar mediante sus comandos AT que son estos: https://www.espressif.com/sites/default/files/documentation/4a-esp8266_at_instruction_set_en.pdf
+
+     
+
+    y creo que cumple mejor con la orientación de la picoCIAA que es IOT.
+
+     
+
+    El regulador de tensión para la batería de 9 voltios pienso que debería ser uno lineal por el reducido espacio no?
+
+     
+
+    Respecto al acelerómetro encontré 2 modelos populares.
+
+     
+
+    El primero es uno que tiene salidas analógicas que se conectan a las entradas analógicas del microcontrolador y la referencia a tierra de las entradas analógicas que es este:
+
+    http://www.nxp.com/assets/documents/data/en/data-sheets/MMA7361L.pdf
+
+     
+
+    El segundo es uno que se comunica mediante I2C que es este
+
+    https://cdn-shop.adafruit.com/datasheets/HMC5883L_3-Axis_Digital_Compass_IC.pdf
+
+     
+
+    En caso de ambos existen esquemáticos de shields para Arduino de los cuales me podría guiar.
+
+     
+
+    ¿Cuál es el fin del pulsador de configuración? O solo es un pulsador genérico a un pin de entrada?
+
+     
+
+    En conclusión pienso que es un proyecto realizable y podría tomarlo.
+
+     
+
+    Marcelo Moreno
+
+    Cel: +54 9 11 7082 2003
+
+     
+
+    De: Diego Brengi [mailto:diego.brengi@gmail.com]
+    Enviado el: Tuesday, April 18, 2017 12:37 PM
+    Para: Marcelo Franz Moreno Marin <mmarcelofrm@hotmail.com>
+    Asunto: CESE PCB - TP Final
+
+     
+
+    Hola:
+
+    Te propongo para tu TP Final hacer un poncho para la PicoCiaa que hay muy poco.
+
+     
+
+    Sería:
+
+    -Entrada para batería de 9V (para alimentar Poncho + PicoCiaa).
+
+    -Regulador de tensión.
+
+    -Led de encendido.
+
+    -Módulo Bluetooth. Puede ser RN-42.
+
+    -Módulo Acelerómetro. Buscar alguno muy popular.
+
+    -Led RGB para propositos generales.
+
+    -Interruptor para desenergizar todo.
+
+    -Pulsador para configuración.
+
+    -Si hay espacio podría ser un buzzer.
+
+     
+
+    Igual que para los Ponchos de la Edu-Ciaa, ya hay plantillas para la PicoCiaa.
+
+     
+
+    Avisame que te parece.
+
+     
+
+    Saludos.
+
