@@ -1,0 +1,172 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:DISEÑO_PONCHO_WIFI_PICOCIAA-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "HC-05 PONCHO PICO CIAA"
+Date "2017-04-23"
+Rev "V1.0"
+Comp "FIUBA"
+Comment1 "Designer: Marcelo Moreno"
+Comment2 "Revisor 1 : Diego Brengi"
+Comment3 "Revisor 2: Carlos Mancon"
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_Pico Conn?
+U 14 1 58FD49CB
+P 1550 1550
+F 0 "Conn?" H 1550 1900 60  0000 C CNN
+F 1 "Conn_Pico" H 1550 1100 60  0000 C CNN
+F 2 "" H 1550 1500 60  0000 C CNN
+F 3 "" H 1550 1500 60  0000 C CNN
+	14   1550 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L BARREL_JACK J?
+U 1 1 58FD4A6D
+P 5200 1500
+F 0 "J?" H 5200 1695 50  0000 C CNN
+F 1 "BARREL_JACK" H 5200 1300 50  0000 C CNN
+F 2 "" H 5200 1500 50  0001 C CNN
+F 3 "" H 5200 1500 50  0001 C CNN
+	1    5200 1500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1400 2800 1400
+NoConn ~ 4900 1500
+Wire Wire Line
+	2050 1550 2300 1550
+$Comp
+L +3.3V #PWR01
+U 1 1 58FD4EFE
+P 2300 1250
+F 0 "#PWR01" H 2300 1100 50  0001 C CNN
+F 1 "+3.3V" H 2300 1390 50  0000 C CNN
+F 2 "" H 2300 1250 50  0001 C CNN
+F 3 "" H 2300 1250 50  0001 C CNN
+	1    2300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1250 2300 1400
+Connection ~ 2300 1400
+$Comp
+L GND #PWR02
+U 1 1 58FD4F7D
+P 3200 2050
+F 0 "#PWR02" H 3200 1800 50  0001 C CNN
+F 1 "GND" H 3200 1900 50  0000 C CNN
+F 2 "" H 3200 2050 50  0001 C CNN
+F 3 "" H 3200 2050 50  0001 C CNN
+	1    3200 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LD1117S33CTR U?
+U 1 1 58FD53BF
+P 3200 1450
+F 0 "U?" H 3200 1750 50  0000 C CNN
+F 1 "LD1117S33CTR" H 3200 1650 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-223" H 3200 1550 50  0001 C CNN
+F 3 "" H 3200 1450 50  0001 C CNN
+	1    3200 1450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1800 4800 1800
+Connection ~ 2300 1700
+Wire Wire Line
+	2050 1700 2300 1700
+$Comp
+L CP1 C?
+U 1 1 58FD58B8
+P 2550 1600
+F 0 "C?" H 2575 1700 50  0000 L CNN
+F 1 "CP1" H 2575 1500 50  0000 L CNN
+F 2 "" H 2550 1600 50  0001 C CNN
+F 3 "" H 2550 1600 50  0001 C CNN
+	1    2550 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1400 2550 1450
+Connection ~ 2550 1400
+Wire Wire Line
+	2550 1750 2550 1800
+Connection ~ 2550 1800
+Wire Wire Line
+	2300 1550 2300 1800
+Wire Wire Line
+	3200 1700 3200 2050
+$Comp
+L CP1 C?
+U 1 1 58FD5FB4
+P 3850 1600
+F 0 "C?" H 3875 1700 50  0000 L CNN
+F 1 "CP1" H 3875 1500 50  0000 L CNN
+F 2 "" H 3850 1600 50  0001 C CNN
+F 3 "" H 3850 1600 50  0001 C CNN
+	1    3850 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1400 4350 1400
+Wire Wire Line
+	3850 1450 3850 1400
+Connection ~ 3850 1400
+Connection ~ 3200 1800
+Wire Wire Line
+	3850 1750 3850 1800
+Connection ~ 3850 1800
+$Comp
+L Fuse F?
+U 1 1 58FD645D
+P 4500 1400
+F 0 "F?" V 4580 1400 50  0000 C CNN
+F 1 "Fuse" V 4425 1400 50  0000 C CNN
+F 2 "" V 4430 1400 50  0001 C CNN
+F 3 "" H 4500 1400 50  0001 C CNN
+	1    4500 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 1400 4900 1400
+Wire Wire Line
+	4800 1800 4800 1600
+Wire Wire Line
+	4800 1600 4900 1600
+$EndSCHEMATC

@@ -1,4 +1,4 @@
-update=mié 19 abr 2017 00:23:44 ART
+update=dom 23 abr 2017 23:17:15 ART
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,9 +23,11 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=/home/marcelo/Documentos/KiCad/HC05_PONCHO_PICO_NXP/lib/pico_ciaa_ponchos.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +58,7 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=DISEÑO_PONCHO_WIFI_PICOCIAA-cache
+LibName31=switches
+LibName32=/home/marcelo/Documentos/KiCad/hmc5883l
+LibName33=/home/marcelo/Documentos/KiCad/w_connectors
