@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:HC05_PONCHO-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -49,7 +50,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_Pico Conn1
+L Conn_Pico-RESCUE-HC05_PONCHO Conn1
 U 14 1 58FD49CB
 P 1850 6950
 F 0 "Conn1" H 1850 7300 60  0000 C CNN
@@ -310,7 +311,7 @@ F 3 "" H 10400 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_Pico Conn1
+L Conn_Pico-RESCUE-HC05_PONCHO Conn1
 U 6 1 591BED20
 P 7150 5200
 F 0 "Conn1" H 7150 5500 60  0000 C CNN
@@ -321,7 +322,7 @@ F 3 "" H 7150 5150 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L MOUDLE-BLUETOOTH-HC-05(34P-27X13MM) U2
+L MOUDLE-BLUETOOTH-HC-05(34P-27X13MM)-RESCUE-HC05_PONCHO U2
 U 1 1 591C3DE3
 P 5150 2400
 F 0 "U2" H 4250 3200 50  0000 L CNN
@@ -348,7 +349,7 @@ F 3 "" H 3550 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Conn_Pico Conn1
+L Conn_Pico-RESCUE-HC05_PONCHO Conn1
 U 10 1 591C64F4
 P 8600 2350
 F 0 "Conn1" H 8600 2700 60  0000 C CNN
@@ -359,7 +360,7 @@ F 3 "" H 8600 2300 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Conn_Pico Conn1
+L Conn_Pico-RESCUE-HC05_PONCHO Conn1
 U 1 1 591C67B9
 P 2900 1750
 F 0 "Conn1" H 2900 2100 60  0000 C CNN
@@ -583,7 +584,7 @@ F 3 "" H 2900 5250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Conn_Pico Conn1
+L Conn_Pico-RESCUE-HC05_PONCHO Conn1
 U 11 1 591EDA14
 P 4100 4900
 F 0 "Conn1" H 4100 5500 60  0000 C CNN
