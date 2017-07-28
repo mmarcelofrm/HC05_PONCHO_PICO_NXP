@@ -10,10 +10,10 @@ Title "BLUETOOTH + ACELEROMETRO - PONCHO PICO CIAA"
 Date "2017-06-18"
 Rev "V1.1"
 Comp "Facultad de Ingenieria - Universidad de Buenos Aires"
-Comment1 "Curso: Diseño de PCB - CESE"
-Comment2 "Revisor 1 : Carlos Mancon"
-Comment3 "Designer: Marcelo Moreno"
-Comment4 ""
+Comment1 "GNU GPL License"
+Comment2 "Curso: Diseño de PCB - CESE"
+Comment3 "Revisor 1 : Carlos Mancon"
+Comment4 "Designer: Marcelo Moreno"
 $EndDescr
 $Comp
 L Conn_Pico-RESCUE-HC05_PONCHO Conn1
@@ -21,7 +21,7 @@ U 14 1 58FD49CB
 P 1850 6950
 F 0 "Conn1" H 1850 7300 60  0000 C CNN
 F 1 "Conn_Pico" H 1850 6500 60  0000 C CNN
-F 2 "pico_ciaa_ponchos:Conn_Pico_Ciaa" H 1850 6900 60  0001 C CNN
+F 2 "HC05_PONCHO:Conn_Pico_Ciaa" H 1850 6900 60  0001 C CNN
 F 3 "" H 1850 6900 60  0000 C CNN
 	14   1850 6950
 	1    0    0    -1  
@@ -32,12 +32,11 @@ U 1 1 58FD4A6D
 P 6200 6900
 F 0 "J3" H 6200 7095 50  0000 C CNN
 F 1 "BARREL_JACK" H 6200 6700 50  0000 C CNN
-F 2 "Connectors:BARREL_JACK" H 6200 6900 50  0001 C CNN
+F 2 "HC05_PONCHO:BARREL_JACK" H 6200 6900 50  0001 C CNN
 F 3 "" H 6200 6900 50  0001 C CNN
 	1    6200 6900
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 5900 6900
 $Comp
 L +3.3V #PWR01
 U 1 1 58FD4EFE
@@ -66,7 +65,7 @@ U 1 1 58FD53BF
 P 3500 6850
 F 0 "U1" H 3500 7150 50  0000 C CNN
 F 1 "LD1117S33CTR" H 3500 7050 50  0000 C CNN
-F 2 "TO_SOT_Packages_SMD:SOT-223" H 3500 6950 50  0001 C CNN
+F 2 "HC05_PONCHO:SOT-223" H 3500 6950 50  0001 C CNN
 F 3 "" H 3500 6850 50  0001 C CNN
 	1    3500 6850
 	-1   0    0    -1  
@@ -77,8 +76,12 @@ U 1 1 58FD58B8
 P 2850 7000
 F 0 "C1" H 2875 7100 50  0000 L CNN
 F 1 "10uF/16V" H 2875 6900 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_3x5.3" H 2850 7000 50  0001 C CNN
-F 3 "" H 2850 7000 50  0001 C CNN
+F 2 "HC05_PONCHO:CP_Elec_3x5.3" H 2850 7000 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1145.pdf" H 2850 7000 50  0001 C CNN
+F 4 "CAP ALUM 10UF 20% 16V SMD " H 0   0   50  0001 C CNN "Desc"
+F 5 "PCE3878CT-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Panasonic Electronic Components" H 0   0   50  0001 C CNN "Manf"
+F 7 "EEE-1CA100SR" H 0   0   50  0001 C CNN "Manf#"
 	1    2850 7000
 	1    0    0    -1  
 $EndComp
@@ -87,9 +90,13 @@ L CP1 C2
 U 1 1 58FD5FB4
 P 4150 7000
 F 0 "C2" H 4175 7100 50  0000 L CNN
-F 1 "100nF/25V" H 4175 6900 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_3x5.3" H 4150 7000 50  0001 C CNN
-F 3 "" H 4150 7000 50  0001 C CNN
+F 1 "100nF/50V" H 4175 6900 50  0000 L CNN
+F 2 "HC05_PONCHO:CP_Elec_3x5.3" H 4150 7000 50  0001 C CNN
+F 3 "http://katalog.we-online.de/pbs/datasheet/865230640001.pdf" H 4150 7000 50  0001 C CNN
+F 4 "CAP 0.10 UF 20% 50 V " H 0   0   50  0001 C CNN "Desc"
+F 5 "732-8266-1-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Wurth Electronics Inc." H 0   0   50  0001 C CNN "Manf"
+F 7 "865230640001" H 0   0   50  0001 C CNN "Manf#"
 	1    4150 7000
 	1    0    0    -1  
 $EndComp
@@ -99,7 +106,7 @@ U 1 1 58FD645D
 P 4800 6800
 F 0 "F1" V 4880 6800 50  0000 C CNN
 F 1 "Fuse" V 4725 6800 50  0000 C CNN
-F 2 "Fuse_Holders_and_Fuses:Fuse_SMD2920" V 4730 6800 50  0001 C CNN
+F 2 "HC05_PONCHO:Fuse_SMD2920" V 4730 6800 50  0001 C CNN
 F 3 "" H 4800 6800 50  0001 C CNN
 	1    4800 6800
 	0    1    1    0   
@@ -110,19 +117,18 @@ U 1 1 58FD5C02
 P 5400 6800
 F 0 "SW1" H 5400 6970 50  0000 C CNN
 F 1 "SW_SPDT" H 5400 6600 50  0000 C CNN
-F 2 "Buttons_Switches_THT:SW_NKK_G1xJP" H 5400 6800 50  0001 C CNN
+F 2 "HC05_PONCHO:SW_NKK_G1xJP" H 5400 6800 50  0001 C CNN
 F 3 "" H 5400 6800 50  0001 C CNN
 	1    5400 6800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5600 6900
 $Comp
 L LED D1
 U 1 1 58FD694A
 P 1000 7200
 F 0 "D1" H 1000 7300 50  0000 C CNN
 F 1 "LED/RED" H 1000 7050 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 1000 7200 50  0001 C CNN
+F 2 "HC05_PONCHO:LED_0805_HandSoldering" H 1000 7200 50  0001 C CNN
 F 3 "" H 1000 7200 50  0001 C CNN
 	1    1000 7200
 	0    -1   -1   0   
@@ -133,8 +139,12 @@ U 1 1 58FD69C3
 P 1000 6750
 F 0 "R1" V 1080 6750 50  0000 C CNN
 F 1 "470" V 1000 6750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 930 6750 50  0001 C CNN
-F 3 "" H 1000 6750 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 930 6750 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 1000 6750 50  0001 C CNN
+F 4 "RES SMD 470 OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1276-5523-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J471CS" H 0   0   50  0001 C CNN "Manf#"
 	1    1000 6750
 	1    0    0    -1  
 $EndComp
@@ -166,16 +176,11 @@ U 1 1 58FD7934
 P 8950 6100
 F 0 "U3" H 8800 5800 60  0000 C CNN
 F 1 "HMC5883L" H 9250 5800 60  0000 C CNN
-F 2 "HMC5883L:LPCC-16" H 9050 6550 60  0001 C CNN
+F 2 "HC05_PONCHO:LPCC-16" H 9050 6550 60  0001 C CNN
 F 3 "" H 9050 6550 60  0000 C CNN
 	1    8950 6100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9650 6000
-NoConn ~ 9650 6100
-NoConn ~ 9650 6200
-NoConn ~ 8400 6100
-NoConn ~ 8400 6200
 $Comp
 L GND #PWR05
 U 1 1 58FD8D0B
@@ -187,15 +192,18 @@ F 3 "" H 8150 6250 50  0001 C CNN
 	1    8150 6250
 	1    0    0    -1  
 $EndComp
-NoConn ~ 8400 5500
 $Comp
 L R R9
 U 1 1 58FDA87F
 P 7850 4800
 F 0 "R9" V 7930 4800 50  0000 C CNN
 F 1 "2K2" V 7850 4800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 7780 4800 50  0001 C CNN
-F 3 "" H 7850 4800 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0402" V 7780 4800 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 7850 4800 50  0001 C CNN
+F 4 "RES SMD 2.2K OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1276-5537-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J222CS" H 0   0   50  0001 C CNN "Manf#"
 	1    7850 4800
 	1    0    0    -1  
 $EndComp
@@ -205,8 +213,12 @@ U 1 1 58FDA967
 P 8150 4800
 F 0 "R10" V 8230 4800 50  0000 C CNN
 F 1 "2K2" V 8150 4800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 8080 4800 50  0001 C CNN
-F 3 "" H 8150 4800 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0402" V 8080 4800 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 8150 4800 50  0001 C CNN
+F 4 "RES SMD 2.2K OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1276-5537-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J222CS" H 0   0   50  0001 C CNN "Manf#"
 	1    8150 4800
 	1    0    0    -1  
 $EndComp
@@ -238,8 +250,12 @@ U 1 1 58FDC6D0
 P 9900 5650
 F 0 "C4" H 9910 5720 50  0000 L CNN
 F 1 "0.22uF" H 9910 5570 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0201" H 9900 5650 50  0001 C CNN
-F 3 "" H 9900 5650 50  0001 C CNN
+F 2 "HC05_PONCHO:C_0201" H 9900 5650 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033C80J224KE90-01.pdf" H 9900 5650 50  0001 C CNN
+F 4 "CAP CER 0.22UF 6.3V X6S 0201 " H 0   0   50  0001 C CNN "Desc"
+F 5 "490-10392-1-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Murata Electronics North America" H 0   0   50  0001 C CNN "Manf"
+F 7 "GRM033C80J224KE90D" H 0   0   50  0001 C CNN "Manf#"
 	1    9900 5650
 	1    0    0    1   
 $EndComp
@@ -249,8 +265,12 @@ U 1 1 58FDF2E5
 P 7850 5800
 F 0 "C3" H 7860 5870 50  0000 L CNN
 F 1 "4.7uF" H 7860 5720 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 7850 5800 50  0001 C CNN
-F 3 "" H 7850 5800 50  0001 C CNN
+F 2 "HC05_PONCHO:C_0402" H 7850 5800 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx" H 7850 5800 50  0001 C CNN
+F 4 "CAP CER 4.7UF 6.3V X5R 0402 " H 0   0   50  0001 C CNN "Desc"
+F 5 "490-5915-1-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Murata Electronics North America" H 0   0   50  0001 C CNN "Manf"
+F 7 "GRM155R60J475ME47D" H 0   0   50  0001 C CNN "Manf#"
 	1    7850 5800
 	-1   0    0    -1  
 $EndComp
@@ -260,8 +280,12 @@ U 1 1 58FE07D9
 P 10400 5300
 F 0 "C5" H 10410 5370 50  0000 L CNN
 F 1 "0.1uF" H 10410 5220 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0201" H 10400 5300 50  0001 C CNN
-F 3 "" H 10400 5300 50  0001 C CNN
+F 2 "HC05_PONCHO:C_0201" H 10400 5300 50  0001 C CNN
+F 3 "http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R60J104KE19-01.pdf" H 10400 5300 50  0001 C CNN
+F 4 "CAP CER 0.1UF 6.3V X5R 0201 " H 0   0   50  0001 C CNN "Desc"
+F 5 "490-3167-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Murata Electronics North America" H 0   0   50  0001 C CNN "Manf"
+F 7 "GRM033R60J104KE19D" H 0   0   50  0001 C CNN "Manf#"
 	1    10400 5300
 	1    0    0    1   
 $EndComp
@@ -282,13 +306,17 @@ U 1 1 591C3DE3
 P 5150 2400
 F 0 "U2" H 4250 3200 50  0000 L CNN
 F 1 "MOUDLE-BLUETOOTH-HC-05(34P-27X13MM)" H 4500 3200 50  0000 L CNN
-F 2 "MOUDLE-BLUETOOTH-HC-05_34P-27X13MM_:BT34P-SMD-1.5-26.9X13.0X2.2MM" H 5150 2400 50  0001 L CNN
+F 2 "HC05_PONCHO:BT34P-SMD-1.5-26.9X13.0X2.2MM" H 5150 2400 50  0001 L CNN
 F 3 "" H 5150 2400 50  0001 L CNN
-F 4 "None" H 5150 2400 50  0001 L CNN "Package"
-F 5 "None" H 5150 2400 50  0001 L CNN "Price"
-F 6 "HC-05" H 5150 2400 50  0001 L CNN "MP"
-F 7 "Unavailable" H 5150 2400 50  0001 L CNN "Availability"
-F 8 "None" H 5150 2400 50  0001 L CNN "Description"
+F 4 "Unavailable" H 5150 2400 50  0001 L CNN "Availability"
+F 5 "Unavailable" H 0   0   50  0001 C CNN "Desc"
+F 6 "None" H 5150 2400 50  0001 L CNN "Description"
+F 7 "None" H 0   0   50  0001 C CNN "Digikey#"
+F 8 "HC-05" H 5150 2400 50  0001 L CNN "MP"
+F 9 "HC-05" H 0   0   50  0001 C CNN "Manf"
+F 10 "None" H 0   0   50  0001 C CNN "Mouser#"
+F 11 "None" H 5150 2400 50  0001 L CNN "Package"
+F 12 "None" H 5150 2400 50  0001 L CNN "Price"
 	1    5150 2400
 	1    0    0    -1  
 $EndComp
@@ -309,7 +337,7 @@ U 10 1 591C64F4
 P 8600 2350
 F 0 "Conn1" H 8600 2700 60  0000 C CNN
 F 1 "Conn_Pico" H 8600 1900 60  0000 C CNN
-F 2 "pico_ciaa_ponchos:Conn_Pico_Ciaa" H 8600 2300 60  0001 C CNN
+F 2 "HC05_PONCHO:Conn_Pico_Ciaa" H 8600 2300 60  0001 C CNN
 F 3 "" H 8600 2300 60  0000 C CNN
 	10   8600 2350
 	-1   0    0    -1  
@@ -320,19 +348,11 @@ U 1 1 591C67B9
 P 2800 1450
 F 0 "Conn1" H 2800 1800 60  0000 C CNN
 F 1 "Conn_Pico" H 2800 1900 60  0000 C CNN
-F 2 "pico_ciaa_ponchos:Conn_Pico_Ciaa" H 2800 1400 60  0001 C CNN
+F 2 "HC05_PONCHO:Conn_Pico_Ciaa" H 2800 1400 60  0001 C CNN
 F 3 "" H 2800 1400 60  0000 C CNN
 	1    2800 1450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 4750 3350
-NoConn ~ 4850 3350
-NoConn ~ 4950 3350
-NoConn ~ 5050 3350
-NoConn ~ 5250 3350
-NoConn ~ 5350 3350
-NoConn ~ 5450 3350
-NoConn ~ 5550 3350
 $Comp
 L GND #PWR010
 U 1 1 591CA2FC
@@ -361,7 +381,7 @@ U 1 1 591CBE30
 P 7700 2950
 F 0 "D3" H 7700 3050 50  0000 C CNN
 F 1 "LED/BLUE" H 7700 2800 50  0000 C CNN
-F 2 "LEDs:LED_0805_HandSoldering" H 7700 2950 50  0001 C CNN
+F 2 "HC05_PONCHO:LED_0805_HandSoldering" H 7700 2950 50  0001 C CNN
 F 3 "" H 7700 2950 50  0001 C CNN
 	1    7700 2950
 	-1   0    0    1   
@@ -372,8 +392,12 @@ U 1 1 591CBE36
 P 7150 2950
 F 0 "R7" V 7230 2950 50  0000 C CNN
 F 1 "470" V 7150 2950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7080 2950 50  0001 C CNN
-F 3 "" H 7150 2950 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 7080 2950 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 7150 2950 50  0001 C CNN
+F 4 "RES SMD 470 OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1284-5523-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J471CS" H 0   0   50  0001 C CNN "Manf#"
 	1    7150 2950
 	0    -1   -1   0   
 $EndComp
@@ -394,8 +418,12 @@ U 1 1 591CF38A
 P 6700 1950
 F 0 "R6" V 6780 1950 50  0000 C CNN
 F 1 "470" V 6700 1950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6630 1950 50  0001 C CNN
-F 3 "" H 6700 1950 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 6630 1950 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 6700 1950 50  0001 C CNN
+F 4 "RES SMD 470 OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1283-5523-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J471CS" H 0   0   50  0001 C CNN "Manf#"
 	1    6700 1950
 	0    -1   -1   0   
 $EndComp
@@ -405,32 +433,22 @@ U 1 1 591CF432
 P 6700 1750
 F 0 "R5" V 6780 1750 50  0000 C CNN
 F 1 "470" V 6700 1750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6630 1750 50  0001 C CNN
-F 3 "" H 6700 1750 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 6630 1750 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 6700 1750 50  0001 C CNN
+F 4 "RES SMD 470 OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1282-5523-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J471CS" H 0   0   50  0001 C CNN "Manf#"
 	1    6700 1750
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 6250 1850
-NoConn ~ 6250 2150
-NoConn ~ 6250 2250
-NoConn ~ 6250 2350
-NoConn ~ 6250 2450
-NoConn ~ 6250 2550
-NoConn ~ 6250 2650
-NoConn ~ 6250 2750
-NoConn ~ 6250 2850
-NoConn ~ 4050 2250
-NoConn ~ 4050 2350
-NoConn ~ 4050 2450
-NoConn ~ 4050 2550
-NoConn ~ 4050 2650
 $Comp
 L SW_Push SW2
 U 1 1 591D684D
 P 7550 1250
 F 0 "SW2" H 7600 1350 50  0000 L CNN
 F 1 "SW_Push" H 7550 1190 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_EVQPE1" H 7550 1450 50  0001 C CNN
+F 2 "HC05_PONCHO:SW_SPST_EVQPE1" H 7550 1450 50  0001 C CNN
 F 3 "" H 7550 1450 50  0001 C CNN
 	1    7550 1250
 	1    0    0    -1  
@@ -452,8 +470,12 @@ U 1 1 591D9DB6
 P 7550 1550
 F 0 "R8" V 7630 1550 50  0000 C CNN
 F 1 "10K" V 7550 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 7480 1550 50  0001 C CNN
-F 3 "" H 7550 1550 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 7480 1550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 7550 1550 50  0001 C CNN
+F 4 "RES SMD 10K OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1276-5552-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J103CS" H 0   0   50  0001 C CNN "Manf#"
 	1    7550 1550
 	0    -1   -1   0   
 $EndComp
@@ -474,7 +496,7 @@ U 1 1 591E1612
 P 8450 1250
 F 0 "SW3" H 8500 1350 50  0000 L CNN
 F 1 "SW_Push" H 8450 1190 50  0000 C CNN
-F 2 "Buttons_Switches_SMD:SW_SPST_EVQPE1" H 8450 1450 50  0001 C CNN
+F 2 "HC05_PONCHO:SW_SPST_EVQPE1" H 8450 1450 50  0001 C CNN
 F 3 "" H 8450 1450 50  0001 C CNN
 	1    8450 1250
 	-1   0    0    -1  
@@ -485,8 +507,12 @@ U 1 1 591E161E
 P 8450 1550
 F 0 "R11" V 8530 1550 50  0000 C CNN
 F 1 "10K" V 8450 1550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 8380 1550 50  0001 C CNN
-F 3 "" H 8450 1550 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 8380 1550 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 8450 1550 50  0001 C CNN
+F 4 "RES SMD 10K OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1276-5552-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J103CS" H 0   0   50  0001 C CNN "Manf#"
 	1    8450 1550
 	0    1    -1   0   
 $EndComp
@@ -496,7 +522,7 @@ U 1 1 591E5FA2
 P 2250 5050
 F 0 "D2" H 2250 5420 50  0000 C CNN
 F 1 "LED_ARGB" H 2250 4700 50  0000 C CNN
-F 2 "SML-LX0404SIUPGUSB:DIOC0404X01-4N" H 2250 5000 50  0001 C CNN
+F 2 "HC05_PONCHO:DIOC0404X01-4N" H 2250 5000 50  0001 C CNN
 F 3 "" H 2250 5000 50  0001 C CNN
 	1    2250 5050
 	-1   0    0    -1  
@@ -507,8 +533,12 @@ U 1 1 591E995E
 P 2900 5050
 F 0 "R3" V 2980 5050 50  0000 C CNN
 F 1 "470" V 2900 5050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2830 5050 50  0001 C CNN
-F 3 "" H 2900 5050 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 2830 5050 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 2900 5050 50  0001 C CNN
+F 4 "RES SMD 470 OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1280-5523-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J471CS" H 0   0   50  0001 C CNN "Manf#"
 	1    2900 5050
 	0    -1   -1   0   
 $EndComp
@@ -518,8 +548,12 @@ U 1 1 591ECC4B
 P 2900 4850
 F 0 "R2" V 2980 4850 50  0000 C CNN
 F 1 "470" V 2900 4850 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2830 4850 50  0001 C CNN
-F 3 "" H 2900 4850 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 2830 4850 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 2900 4850 50  0001 C CNN
+F 4 "RES SMD 470 OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1279-5523-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J471CS" H 0   0   50  0001 C CNN "Manf#"
 	1    2900 4850
 	0    -1   -1   0   
 $EndComp
@@ -529,8 +563,12 @@ U 1 1 591ECCD0
 P 2900 5250
 F 0 "R4" V 2980 5250 50  0000 C CNN
 F 1 "470" V 2900 5250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2830 5250 50  0001 C CNN
-F 3 "" H 2900 5250 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 2830 5250 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 2900 5250 50  0001 C CNN
+F 4 "RES SMD 470 OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1281-5523-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J471CS" H 0   0   50  0001 C CNN "Manf#"
 	1    2900 5250
 	0    -1   -1   0   
 $EndComp
@@ -540,7 +578,7 @@ U 11 1 591EDA14
 P 4100 4900
 F 0 "Conn1" H 4100 5500 60  0000 C CNN
 F 1 "Conn_Pico" H 4100 4150 60  0000 C CNN
-F 2 "pico_ciaa_ponchos:Conn_Pico_Ciaa" H 4100 4850 60  0001 C CNN
+F 2 "HC05_PONCHO:Conn_Pico_Ciaa" H 4100 4850 60  0001 C CNN
 F 3 "" H 4100 4850 60  0000 C CNN
 	11   4100 4900
 	1    0    0    -1  
@@ -556,14 +594,6 @@ F 3 "" H 1650 4800 50  0001 C CNN
 	1    1650 4800
 	1    0    0    -1  
 $EndComp
-Text Notes 3850 800  0    166  ~ 33
-Bluetooth interface HC-05
-Text Notes 1750 4050 0    166  ~ 33
-RGB LED Interface
-Text Notes 550  6200 0    166  ~ 33
-Voltage Regulated Power Supply 9 VDC - 3.3 VDC
-Text Notes 6400 4050 0    166  ~ 33
-Acelerometer interface - HMC5883L
 $Comp
 L Logo_Poncho #G1
 U 1 1 59214899
@@ -592,7 +622,7 @@ U 1 1 592179ED
 P 1000 3400
 F 0 "J1" H 1000 3500 50  0000 C CNN
 F 1 "MOUNT_HOLE" V 1100 3400 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 1000 3400 50  0001 C CNN
+F 2 "HC05_PONCHO:MountingHole_2.5mm_Pad_Via" H 1000 3400 50  0001 C CNN
 F 3 "" H 1000 3400 50  0001 C CNN
 	1    1000 3400
 	0    1    1    0   
@@ -603,30 +633,11 @@ U 1 1 59217C29
 P 1750 3400
 F 0 "J2" H 1750 3500 50  0000 C CNN
 F 1 "MOUNT_HOLE" V 1850 3400 50  0000 C CNN
-F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 1750 3400 50  0001 C CNN
+F 2 "HC05_PONCHO:MountingHole_2.5mm_Pad_Via" H 1750 3400 50  0001 C CNN
 F 3 "" H 1750 3400 50  0001 C CNN
 	1    1750 3400
 	0    1    1    0   
 $EndComp
-NoConn ~ 9350 2300
-NoConn ~ 7850 2350
-NoConn ~ 3300 4450
-NoConn ~ 3300 4550
-NoConn ~ 3300 4650
-NoConn ~ 3300 4750
-NoConn ~ 3300 4950
-NoConn ~ 3300 5150
-NoConn ~ 3300 5350
-NoConn ~ 4900 4450
-NoConn ~ 4900 4550
-NoConn ~ 4900 4650
-NoConn ~ 4900 4750
-NoConn ~ 4900 4850
-NoConn ~ 4900 4950
-NoConn ~ 4900 5050
-NoConn ~ 4900 5150
-NoConn ~ 4900 5250
-NoConn ~ 4900 5350
 $Comp
 L GND #PWR016
 U 1 1 591CF776
@@ -655,7 +666,7 @@ U 1 1 59349DF9
 P 10650 1800
 F 0 "BZ1" H 10800 1850 50  0000 L CNN
 F 1 "Buzzer" H 10800 1750 50  0000 L CNN
-F 2 "Buzzers_Beepers:MagneticBuzzer_Kingstate_KCG0601" V 10625 1900 50  0001 C CNN
+F 2 "HC05_PONCHO:MagneticBuzzer_Kingstate_KCG0601" V 10625 1900 50  0001 C CNN
 F 3 "" V 10625 1900 50  0001 C CNN
 	1    10650 1800
 	1    0    0    -1  
@@ -666,7 +677,7 @@ U 1 1 59349EF9
 P 10450 2400
 F 0 "Q1" H 10650 2450 50  0000 L CNN
 F 1 "Q_NPN_EBC" H 10650 2350 50  0000 L CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 10650 2500 50  0001 C CNN
+F 2 "HC05_PONCHO:SOT-23" H 10650 2500 50  0001 C CNN
 F 3 "" H 10450 2400 50  0001 C CNN
 	1    10450 2400
 	1    0    0    -1  
@@ -677,8 +688,12 @@ U 1 1 5934A562
 P 9850 2400
 F 0 "R12" V 9930 2400 50  0000 C CNN
 F 1 "10K" V 9850 2400 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 9780 2400 50  0001 C CNN
-F 3 "" H 9850 2400 50  0001 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 9780 2400 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 9850 2400 50  0001 C CNN
+F 4 "RES SMD 10K OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1277-5552-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J103CS" H 0   0   50  0001 C CNN "Manf#"
 	1    9850 2400
 	0    1    -1   0   
 $EndComp
@@ -704,35 +719,77 @@ F 3 "" H 10550 2850 50  0001 C CNN
 	1    10550 2850
 	1    0    0    -1  
 $EndComp
+$Comp
+L R R13
+U 1 1 5947417C
+P 3900 1450
+F 0 "R13" V 3980 1450 50  0000 C CNN
+F 1 "470" V 3900 1450 50  0000 C CNN
+F 2 "HC05_PONCHO:R_0805_HandSoldering" V 3830 1450 50  0001 C CNN
+F 3 "http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf" H 3900 1450 50  0001 C CNN
+F 4 "RES SMD 470 OHM 5% 1/8W 0805 " H 0   0   50  0001 C CNN "Desc"
+F 5 "1278-5523-2-ND" H 0   0   50  0001 C CNN "Digikey#"
+F 6 "Samsung Electro-Mechanics America, Inc" H 0   0   50  0001 C CNN "Manf"
+F 7 "RC2012J471CS" H 0   0   50  0001 C CNN "Manf#"
+	1    3900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR020
+U 1 1 59474182
+P 3900 1150
+F 0 "#PWR020" H 3900 1000 50  0001 C CNN
+F 1 "+3.3V" H 3900 1290 50  0000 C CNN
+F 2 "" H 3900 1150 50  0001 C CNN
+F 3 "" H 3900 1150 50  0001 C CNN
+	1    3900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_Pico-RESCUE-HC05_PONCHO Conn1
+U 5 1 597CA695
+P 7150 5200
+F 0 "Conn1" H 7150 5500 60  0000 C CNN
+F 1 "Conn_Pico" H 7150 4700 60  0000 C CNN
+F 2 "HC05_PONCHO:Conn_Pico_Ciaa" H 7150 5600 60  0001 C CNN
+F 3 "" H 7150 5150 60  0001 C CNN
+	5    7150 5200
+	1    0    0    1   
+$EndComp
+Text Notes 3850 800  0    166  ~ 33
+Bluetooth interface HC-05
+Text Notes 1750 4050 0    166  ~ 33
+RGB LED Interface
+Text Notes 550  6200 0    166  ~ 33
+Voltage Regulated Power Supply 9 VDC - 3.3 VDC
+Text Notes 6400 4050 0    166  ~ 33
+Acelerometer interface - HMC5883L
+Text GLabel 3800 2750 0    60   Input ~ 0
+HC05-RST
+Text GLabel 9600 2750 2    60   Input ~ 0
+HC05-RST
 Wire Wire Line
 	2350 6800 3100 6800
 Wire Wire Line
 	2350 6950 2600 6950
 Wire Wire Line
 	2600 6650 2600 6800
-Connection ~ 2600 6800
 Wire Wire Line
 	2600 7200 5750 7200
-Connection ~ 2600 7100
 Wire Wire Line
 	2350 7100 2600 7100
 Wire Wire Line
 	2850 6800 2850 6850
-Connection ~ 2850 6800
 Wire Wire Line
 	2850 7150 2850 7200
-Connection ~ 2850 7200
 Wire Wire Line
 	2600 6950 2600 7200
 Wire Wire Line
 	3500 7100 3500 7450
 Wire Wire Line
 	3900 6800 4650 6800
-Connection ~ 4150 6800
-Connection ~ 3500 7200
 Wire Wire Line
 	4150 7150 4150 7200
-Connection ~ 4150 7200
 Wire Wire Line
 	4950 6800 5200 6800
 Wire Wire Line
@@ -763,8 +820,6 @@ Wire Wire Line
 	9650 5200 10400 5200
 Wire Wire Line
 	9650 5300 9900 5300
-Connection ~ 9900 5300
-Connection ~ 9900 5200
 Wire Wire Line
 	9650 5600 9750 5600
 Wire Wire Line
@@ -779,15 +834,12 @@ Wire Wire Line
 	9750 5750 9900 5750
 Wire Wire Line
 	7850 5900 8400 5900
-Connection ~ 8150 5900
 Wire Wire Line
 	8400 5800 8150 5800
 Wire Wire Line
 	10400 5650 10400 5400
 Wire Wire Line
 	7600 5100 8150 5100
-Connection ~ 8150 5100
-Connection ~ 7850 5300
 Wire Wire Line
 	7850 4650 7850 4500
 Wire Wire Line
@@ -796,7 +848,6 @@ Wire Wire Line
 	8150 4500 8150 4650
 Wire Wire Line
 	8000 4500 8000 4350
-Connection ~ 8000 4500
 Wire Wire Line
 	3050 2850 4050 2850
 Wire Wire Line
@@ -825,7 +876,6 @@ Wire Wire Line
 	8100 2950 8100 3200
 Wire Wire Line
 	6850 1750 7350 1750
-Connection ~ 6400 1750
 Wire Wire Line
 	7700 1550 8300 1550
 Wire Wire Line
@@ -850,9 +900,6 @@ Wire Wire Line
 	6400 1250 6400 1750
 Wire Wire Line
 	7400 1550 6400 1550
-Connection ~ 6400 1550
-Connection ~ 8000 1550
-Connection ~ 8000 1250
 Wire Wire Line
 	9600 2200 9350 2200
 Wire Wire Line
@@ -861,7 +908,6 @@ Wire Wire Line
 	9600 1250 8650 1250
 Wire Wire Line
 	8600 1550 9600 1550
-Connection ~ 9600 1550
 Wire Wire Line
 	3300 4850 3050 4850
 Wire Wire Line
@@ -898,7 +944,6 @@ Wire Wire Line
 	1000 3200 1000 3050
 Wire Wire Line
 	1000 3050 2500 3050
-Connection ~ 1750 3050
 Wire Wire Line
 	2500 3050 2500 3350
 Wire Wire Line
@@ -923,34 +968,8 @@ Wire Wire Line
 	1750 2050 4050 2050
 Wire Wire Line
 	1500 1950 4050 1950
-Text GLabel 3800 2750 0    60   Input ~ 0
-HC05-RST
 Wire Wire Line
 	3800 2750 4050 2750
-Text GLabel 9600 2750 2    60   Input ~ 0
-HC05-RST
-$Comp
-L R R13
-U 1 1 5947417C
-P 3900 1450
-F 0 "R13" V 3980 1450 50  0000 C CNN
-F 1 "470" V 3900 1450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 3830 1450 50  0001 C CNN
-F 3 "" H 3900 1450 50  0001 C CNN
-	1    3900 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR020
-U 1 1 59474182
-P 3900 1150
-F 0 "#PWR020" H 3900 1000 50  0001 C CNN
-F 1 "+3.3V" H 3900 1290 50  0000 C CNN
-F 2 "" H 3900 1150 50  0001 C CNN
-F 3 "" H 3900 1150 50  0001 C CNN
-	1    3900 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3900 1150 3900 1300
 Wire Wire Line
@@ -975,19 +994,6 @@ Wire Wire Line
 	3450 1550 3550 1550
 Wire Wire Line
 	3550 1550 3550 1850
-Connection ~ 3900 1750
-Connection ~ 9000 3950
-$Comp
-L Conn_Pico-RESCUE-HC05_PONCHO Conn1
-U 5 1 597CA695
-P 7150 5200
-F 0 "Conn1" H 7150 5500 60  0000 C CNN
-F 1 "Conn_Pico" H 7150 4700 60  0000 C CNN
-F 2 "" H 7150 5150 60  0000 C CNN
-F 3 "" H 7150 5150 60  0000 C CNN
-	5    7150 5200
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7100 2450 7850 2450
 Wire Wire Line
@@ -998,4 +1004,74 @@ Wire Wire Line
 	9500 2750 9600 2750
 Wire Wire Line
 	9700 2400 9350 2400
+Connection ~ 2600 6800
+Connection ~ 2600 7100
+Connection ~ 2850 6800
+Connection ~ 2850 7200
+Connection ~ 4150 6800
+Connection ~ 3500 7200
+Connection ~ 4150 7200
+Connection ~ 9900 5300
+Connection ~ 9900 5200
+Connection ~ 8150 5900
+Connection ~ 8150 5100
+Connection ~ 7850 5300
+Connection ~ 8000 4500
+Connection ~ 6400 1750
+Connection ~ 6400 1550
+Connection ~ 8000 1550
+Connection ~ 8000 1250
+Connection ~ 9600 1550
+Connection ~ 1750 3050
+Connection ~ 3900 1750
+Connection ~ 9000 3950
+NoConn ~ 5900 6900
+NoConn ~ 5600 6900
+NoConn ~ 9650 6000
+NoConn ~ 9650 6100
+NoConn ~ 9650 6200
+NoConn ~ 8400 6100
+NoConn ~ 8400 6200
+NoConn ~ 8400 5500
+NoConn ~ 4750 3350
+NoConn ~ 4850 3350
+NoConn ~ 4950 3350
+NoConn ~ 5050 3350
+NoConn ~ 5250 3350
+NoConn ~ 5350 3350
+NoConn ~ 5450 3350
+NoConn ~ 5550 3350
+NoConn ~ 6250 1850
+NoConn ~ 6250 2150
+NoConn ~ 6250 2250
+NoConn ~ 6250 2350
+NoConn ~ 6250 2450
+NoConn ~ 6250 2550
+NoConn ~ 6250 2650
+NoConn ~ 6250 2750
+NoConn ~ 6250 2850
+NoConn ~ 4050 2250
+NoConn ~ 4050 2350
+NoConn ~ 4050 2450
+NoConn ~ 4050 2550
+NoConn ~ 4050 2650
+NoConn ~ 9350 2300
+NoConn ~ 7850 2350
+NoConn ~ 3300 4450
+NoConn ~ 3300 4550
+NoConn ~ 3300 4650
+NoConn ~ 3300 4750
+NoConn ~ 3300 4950
+NoConn ~ 3300 5150
+NoConn ~ 3300 5350
+NoConn ~ 4900 4450
+NoConn ~ 4900 4550
+NoConn ~ 4900 4650
+NoConn ~ 4900 4750
+NoConn ~ 4900 4850
+NoConn ~ 4900 4950
+NoConn ~ 4900 5050
+NoConn ~ 4900 5150
+NoConn ~ 4900 5250
+NoConn ~ 4900 5350
 $EndSCHEMATC

@@ -1,0 +1,35 @@
+Refs,Desc,Description,Manf,Manf#,Digikey#,Mouser#,datasheet,footprint,value
+BZ1,,,,,,,,Buzzers_Beepers:MagneticBuzzer_Kingstate_KCG0601,Buzzer
+C1,CAP ALUM 10UF 20% 16V SMD ,,Panasonic Electronic Components,EEE-1CA100SR,PCE3878CT-ND,,https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1145.pdf,Capacitors_SMD:CP_Elec_3x5.3,10uF/16V
+C2,CAP 0.10 UF 20% 50 V ,,Wurth Electronics Inc.,865230640001,732-8266-1-ND,,http://katalog.we-online.de/pbs/datasheet/865230640001.pdf,Capacitors_SMD:CP_Elec_3x5.3,100nF/50V
+C3,CAP CER 4.7UF 6.3V X5R 0402 ,,Murata Electronics North America,GRM155R60J475ME47D,490-5915-1-ND,,http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.ashx,Capacitors_SMD:C_0402,4.7uF
+C4,CAP CER 0.22UF 6.3V X6S 0201 ,,Murata Electronics North America,GRM033C80J224KE90D,490-10392-1-ND,,http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033C80J224KE90-01.pdf,Capacitors_SMD:C_0201,0.22uF
+C5,CAP CER 0.1UF 6.3V X5R 0201 ,,Murata Electronics North America,GRM033R60J104KE19D,490-3167-2-ND,,http://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM033R60J104KE19-01.pdf,Capacitors_SMD:C_0201,0.1uF
+Conn1,,,,,,,,pico_ciaa_ponchos:Conn_Pico_Ciaa,Conn_Pico
+D1,,,,,,,,LEDs:LED_0805_HandSoldering,LED/RED
+D2,,,,,,,,SML-LX0404SIUPGUSB:DIOC0404X01-4N,LED_ARGB
+D3,,,,,,,,LEDs:LED_0805_HandSoldering,LED/BLUE
+F1,,,,,,,,Fuse_Holders_and_Fuses:Fuse_SMD2920,Fuse
+J1,,,,,,,,Mounting_Holes:MountingHole_2.5mm_Pad_Via,MOUNT_HOLE
+J2,,,,,,,,Mounting_Holes:MountingHole_2.5mm_Pad_Via,MOUNT_HOLE
+J3,,,,,,,,Connectors:BARREL_JACK,BARREL_JACK
+Q1,,,,,,,,TO_SOT_Packages_SMD:SOT-23,Q_NPN_EBC
+R1,RES SMD 470 OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J471CS,1276-5523-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,470
+R10,RES SMD 2.2K OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J222CS,1276-5537-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0402,2K2
+R11,RES SMD 10K OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J103CS,1276-5552-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,10K
+R12,RES SMD 10K OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J103CS,1277-5552-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,10K
+R13,RES SMD 470 OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J471CS,1278-5523-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,470
+R2,RES SMD 470 OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J471CS,1279-5523-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,470
+R3,RES SMD 470 OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J471CS,1280-5523-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,470
+R4,RES SMD 470 OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J471CS,1281-5523-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,470
+R5,RES SMD 470 OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J471CS,1282-5523-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,470
+R6,RES SMD 470 OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J471CS,1283-5523-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,470
+R7,RES SMD 470 OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J471CS,1284-5523-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,470
+R8,RES SMD 10K OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J103CS,1276-5552-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0805_HandSoldering,10K
+R9,RES SMD 2.2K OHM 5% 1/8W 0805 ,,"Samsung Electro-Mechanics America, Inc",RC2012J222CS,1276-5537-2-ND,,http://www.samsungsem.com/kr/support/library/product-catalog/__icsFiles/afieldfile/2015/09/22/CHIP_RESISTOR_2015.pdf,Resistors_SMD:R_0402,2K2
+SW1,,,,,,,,Buttons_Switches_THT:SW_NKK_G1xJP,SW_SPDT
+SW2,,,,,,,,Buttons_Switches_SMD:SW_SPST_EVQPE1,SW_Push
+SW3,,,,,,,,Buttons_Switches_SMD:SW_SPST_EVQPE1,SW_Push
+U1,,,,,,,,TO_SOT_Packages_SMD:SOT-223,LD1117S33CTR
+U2,Unavailable,None,HC-05,,None,None,,MOUDLE-BLUETOOTH-HC-05_34P-27X13MM_:BT34P-SMD-1.5-26.9X13.0X2.2MM,MOUDLE-BLUETOOTH-HC-05(34P-27X13MM)
+U3,,,,,,,,HMC5883L:LPCC-16,HMC5883L

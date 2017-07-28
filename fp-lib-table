@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name HC05_PONCHO)(type KiCad)(uri "$(KIPRJMOD)/HC05_PONCHO.pretty")(options "")(descr ""))
+)
